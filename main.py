@@ -4,9 +4,23 @@
 
 # Run in Bash
 
+#Create and activate virtual environment
+#python -m venv proj_venv
+#source proj_venv/bin/activate
+
 #pip install -q diffusers==0.11.1
 #pip install -q accelerate transformers ftfy bitsandbytes==0.35.0 gradio natsort safetensors xformers
-#pip -q install huggingface_hub==0.25.1
+#pip install huggingface-hub>=0.26.0,<1.0
+#pip install matplotlib
+#pip install jax jaxlib
+#pip install transformers -U
+# go to the diffusers path to locate the file dynamic_modules_utils.py
+# cd /workspaces/Stable_Diffusion
+# cd proj_venv/lib/python3.12/site-packages/diffusers/
+# changing the file dynamic_modules_utils.py, using following command
+# vim /workspaces/Stable_Diffusion/proj_venv/lib/python3.12/site-packages/diffusers/dynamic_modules_utils.py
+
+
 
 # Import required packages
 
